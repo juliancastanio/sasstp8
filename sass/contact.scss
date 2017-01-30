@@ -1,0 +1,87 @@
+@import "variables";
+
+@import "mixins";
+
+.updates{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/indexbanner-bg2.jpg);
+  height: 450px;
+  background-position: center center;
+  margin-bottom: -30px;
+
+  h1{
+  @include headings("Raleway", 32px, $colorWhite, bold, capitalize);
+  text-align: center;
+  padding-top: 120px;
+  padding-left: 0px;
+
+  }
+
+  p{
+    color: $colorWhite;
+    line-height: 35px;
+    text-align: center;
+    max-width: 50%;
+    padding-top: 30px;
+    padding-left: 0px;
+    margin: auto;
+  }
+}
+
+input[value="submit"]{
+  display: $block;
+  margin: $smallPadd auto;
+  @include headings(inherit, 12px, $colorWhite, bold, uppercase);
+  background-color: $colorS;
+  padding: $smallPadd;
+  width: 20%;
+  border-style: none;
+  transition: 1s;
+  @include css3(border-radius, 5px);
+
+  &:hover{
+    @include css3(transform, scale(1.1));
+  }
+}
+
+.half{
+  display: $inLine;
+  max-width: 48%;
+  box-sizing: border-box;
+  padding: $smallPadd 0px;
+
+  input, textarea{
+    width: 100%;
+    margin: 5px 0px;
+    border: 1px solid silver;
+    line-height: 29px;
+    text-transform: capitalize;
+    font-family: inherit;
+    text-indent: 10px;
+  }
+
+  textarea{
+    resize: none;
+  }
+}
+
+@media (max-width: 1025px){
+  header{
+    display: $block;
+  }
+
+  input[type=submit]{
+      width: 50%;
+  }
+}
+
+@media (max-width: 451px){
+  .updates{
+    background: $colorFooter2;
+  }
+
+  .flex{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,382 @@
+body {
+  font-family: "Raleway";
+  font-size: 14px;
+  color: #091722;
+  font-weight: normal;
+  text-transform: none; }
+
+p {
+  color: grey; }
+
+h2 {
+  font-family: "Open Sans";
+  font-size: 35px;
+  color: #091722;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 20px; }
+
+h4 {
+  font-family: inherit;
+  font-size: 12px;
+  color: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 40px; }
+
+.contenedor {
+  max-width: 900px;
+  margin: auto;
+  padding: 0px 20px; }
+
+.center {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 80px; }
+  .center p {
+    color: grey;
+    padding-top: 10px; }
+  .center h3, .center h4 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #091722;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.barra {
+  padding: 15px; }
+
+.logo {
+  display: inline-block; }
+
+.nav-menu ul li {
+  display: inline-block;
+  margin-right: 5px; }
+  .nav-menu ul li a {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none; }
+  .nav-menu ul li a:hover {
+    color: black; }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap; }
+  .flex article {
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    flex: 1; }
+    .flex article img {
+      display: block;
+      margin: auto;
+      padding-bottom: 20px;
+      transition: 1s; }
+    .flex article img:hover {
+      -webkit-transform: translateY(10px);
+      -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+      -o-transform: translateY(10px);
+      transform: translateY(10px); }
+
+.updates {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/indexbanner-bg3.jpg);
+  height: 450px;
+  background-position: top center;
+  margin-bottom: -30px; }
+  .updates h1 {
+    font-family: "Raleway";
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: left;
+    padding-top: 120px;
+    padding-left: 150px; }
+  .updates p {
+    color: white;
+    line-height: 35px;
+    text-align: left;
+    max-width: 30%;
+    padding-top: 30px;
+    padding-left: 150px; }
+
+.services p {
+  display: block;
+  text-align: center; }
+
+.search {
+  width: 100%;
+  background-color: white;
+  padding: 0px 0px; }
+  .search input[type=text] {
+    text-indent: 20px;
+    width: 90%;
+    border: none;
+    font-size: inherit; }
+  .search input[type=submit] {
+    font-family: "Open Sans";
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #00afff;
+    letter-spacing: 2px;
+    width: 10%;
+    padding: 20px 0px;
+    border-style: none;
+    cursor: pointer; }
+
+.puntitos {
+  display: block;
+  margin-top: 50px;
+  margin: auto;
+  padding-bottom: 20px; }
+
+.iphone {
+  max-width: 33%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 80px; }
+  .iphone article {
+    display: block;
+    position: relative;
+    margin-bottom: 70px; }
+  .iphone h4 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #091722;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .iphone img {
+    transition: 1s; }
+  .iphone img:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03); }
+
+section.izq {
+  padding-right: 90px;
+  box-sizing: border-box; }
+  section.izq article {
+    text-align: right; }
+    section.izq article p {
+      display: inline-block;
+      color: grey;
+      line-height: 20px;
+      text-align: right; }
+    section.izq article img {
+      position: absolute;
+      right: -60px;
+      top: -20px;
+      transition: 1s; }
+
+section.der {
+  padding-left: 90px;
+  box-sizing: border-box; }
+  section.der img {
+    position: absolute;
+    left: -60px;
+    top: -20px;
+    transition: 1s; }
+  section.der p {
+    display: inline-block;
+    color: grey;
+    line-height: 20px;
+    text-align: left; }
+
+.precios {
+  text-align: center;
+  background-origin: content-box;
+  background: url(../img/pricing-bg.jpg) no-repeat;
+  background-position: top center;
+  margin-top: -100px;
+  padding-top: 200px;
+  margin-bottom: 200px; }
+  .precios section {
+    margin-top: 80px; }
+  .precios article {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    background-color: white;
+    flex: 0;
+    -webkit-box-shadow: 10px 11px 5px -6px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 10px 11px 5px -6px rgba(0, 0, 0, 0.22);
+    -ms-box-shadow: 10px 11px 5px -6px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 10px 11px 5px -6px rgba(0, 0, 0, 0.22);
+    box-shadow: 10px 11px 5px -6px rgba(0, 0, 0, 0.22); }
+  .precios ul {
+    margin-top: 80px;
+    margin-bottom: 25px; }
+    .precios ul li {
+      margin-bottom: 20px; }
+
+.mount {
+  color: grey; }
+
+ul.green span {
+  color: #00afff; }
+
+ul.yellow span {
+  color: #f4d142; }
+
+ul.orange span {
+  color: orange; }
+
+ul.red span {
+  color: red; }
+
+.test99 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black; }
+  .test99:after {
+    content: ".99";
+    font-size: 20px;
+    position: relative;
+    top: -16px; }
+  .test99:before {
+    font-size: 20px;
+    content: "$";
+    position: relative;
+    top: -16px; }
+
+input[value="select plan"] {
+  font-family: inherit;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #00afff;
+  padding: 10px 20px;
+  width: 100%;
+  border-style: none;
+  transition: 1s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  input[value="select plan"]:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.azul {
+  background: #142e3f; }
+
+footer {
+  background: #091722; }
+
+.hosting {
+  font-family: inherit;
+  font-size: 18px;
+  color: inherit;
+  font-weight: normal;
+  text-transform: none;
+  padding: 100px 0px;
+  text-align: center; }
+  .hosting a {
+    font-family: inherit;
+    font-size: 22px;
+    color: #00afff;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; }
+  .hosting p {
+    color: white; }
+
+.pie {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+  padding: 30px 0px; }
+  .pie p {
+    color: white; }
+  .pie ul {
+    display: inline-block; }
+    .pie ul li {
+      display: inline-block;
+      margin-right: 20px; }
+    .pie ul a {
+      color: white;
+      text-decoration: none; }
+    .pie ul a:hover {
+      color: #00afff; }
+
+@media (max-width: 1025px) {
+  .contenedor {
+    max-width: 650px; }
+
+  .search {
+    width: 65%; }
+    .search input[type=text] {
+      width: 75%; }
+    .search input[type=submit] {
+      width: 25%; }
+
+  .barra, .pie {
+    flex-direction: column; }
+
+  .nav-menu ul li, .pie ul li {
+    display: block;
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 16px; }
+
+  header, img.puntitos {
+    display: none; }
+
+  section.flex article {
+    flex: 48%; }
+
+  div.precios article {
+    margin: 5px; }
+
+  section.der article img, section.izq article img {
+    left: -55px; }
+
+  section.izq article, section.der, section.izq article p {
+    text-align: left; }
+
+  section.izq article p, section.der article p {
+    padding-left: 0px; }
+
+  section.izq, section.der {
+    padding-left: 70px; }
+
+  div.precios {
+    margin-top: 0px; } }
+@media (max-width: 451px) {
+  .contenedor {
+    max-width: 300px; }
+
+  .search input[type=text] {
+    width: 70%; }
+  .search input[type=submit] {
+    width: 30%; }
+
+  section.flex article {
+    flex: 100%; }
+
+  div.precios article {
+    margin: 15px; } }
+
+/*# sourceMappingURL=style.css.map */

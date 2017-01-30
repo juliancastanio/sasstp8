@@ -1,0 +1,360 @@
+@import "variables";
+
+@import "mixins";
+
+body{
+    @include headings("Raleway", 14px, $colorP, normal, none);
+}
+
+p{
+  color: $colorGrey;
+}
+
+h2{
+  @include headings("Open Sans", 35px, $colorP, bold, capitalize);
+  text-align: center;
+  padding-bottom: $smallPadd;
+}
+
+h4{
+  @include headings(inherit, 12px, inherit, bold, uppercase);
+  margin-bottom: $smallPadd;
+  margin-top: 40px;
+}
+
+.contenedor{
+  max-width: 900px;
+  margin: auto;
+  padding: 0px $smallPadd;
+}
+
+.center{
+  text-align: center;
+  margin-bottom: $padd;
+  margin-top: $largePadd;
+
+  p{
+  color: $colorGrey;
+  padding-top: 10px;
+  }
+
+  h3, h4{
+    @include headings("Open Sans", 12px, $colorP, bold, uppercase);
+  }
+}
+
+.barra{
+  padding: 15px;
+}
+
+.logo{
+  display: $inLine;
+}
+
+.nav-menu ul li{
+  display: $inLine;
+  margin-right: 5px;
+
+  a{
+    @include headings("Open Sans", 12px, $colorGrey, bold, uppercase);
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $colorBlack;
+  }
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+
+  article{
+    display: $inLine;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    flex: 1;
+
+  img{
+  display: $block;
+  margin: auto;
+  padding-bottom: 20px;
+  transition: 1s;
+  }
+
+  img:hover{
+    @include css3(transform, translateY(10px));
+  }
+  }
+}
+
+.updates{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/indexbanner-bg3.jpg);
+  height: 450px;
+  background-position: top center;
+  margin-bottom: -30px;
+
+  h1{
+  @include headings("Raleway", 32px, $colorWhite, bold, capitalize);
+  text-align: left;
+  padding-top: 120px;
+  padding-left: 150px;
+  }
+
+  p{
+    color: $colorWhite;
+    line-height: 35px;
+    text-align: left;
+    max-width: 30%;
+    padding-top: 30px;
+    padding-left: 150px;
+  }
+}
+
+.services p{
+  display: $block;
+  text-align: center;
+}
+
+.search{
+  width: 100%;
+  background-color: $colorWhite;
+  padding: 0px 0px;
+
+  input[type=text]{
+    text-indent: 20px;
+    width: 90%;
+    border: none;
+    font-size: inherit;
+  }
+
+  input[type=submit]{
+    @include headings("Open Sans", 10px, $colorWhite, bold, uppercase);
+    background-color: $colorS;
+    letter-spacing: 2px;
+    width: 10%;
+    padding: $smallPadd 0px;
+    border-style: none;
+    cursor: pointer;
+  }
+}
+
+.puntitos{
+  display: $block;
+  margin-top: $padd;
+  margin: auto;
+  padding-bottom: $smallPadd;
+}
+
+.iphone{
+  max-width: 33%;
+  display: $inLine;
+  vertical-align: middle;
+  margin-top: $largePadd;
+
+  article{
+    display: $block;
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  h4{
+    @include headings("Open Sans", 12px, $colorP, bold, uppercase);
+  }
+
+  img{
+    transition: 1s;
+  }
+
+  img:hover{
+    @include css3(transform, scale(1.03));
+  }
+}
+
+section.izq{
+  padding-right: 90px;
+  box-sizing: border-box;
+
+  article{
+    text-align: right;
+
+    p{
+      display: $inLine;
+      color: $colorGrey;
+      line-height: 20px;
+      text-align: right;
+    }
+
+    img{
+      position: absolute;
+      right: -60px;
+      top: -20px;
+      transition: 1s;
+    }
+  }
+}
+
+section.der{
+  padding-left: 90px;
+  box-sizing: border-box;
+
+  img{
+    position: absolute;
+    left: -60px;
+    top: -20px;
+    transition: 1s;
+  }
+
+  p{
+    display: $inLine;
+    color: $colorGrey;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+.precios{
+  text-align: center;
+  background-origin: content-box;
+  background: url(../img/pricing-bg.jpg) no-repeat;
+  background-position: top center;
+  margin-top: -100px;
+  padding-top: 200px;
+  margin-bottom: 200px;
+
+  section{
+    margin-top: $largePadd;
+  }
+
+  article{
+    box-sizing: border-box;
+    padding: $smallPadd 40px;
+    background-color: $colorWhite;
+    flex: 0;
+    @include css3(box-shadow, 10px 11px 5px -6px rgba(0,0,0,0.22)); 
+  }
+
+  ul{
+    margin-top: $largePadd;
+    margin-bottom: 25px;
+
+    li{
+      margin-bottom: $smallPadd;
+    }
+  }
+}
+
+.mount{
+  color: $colorGrey;
+}
+
+ul.green span{
+  color: #00afff;
+}
+
+ul.yellow span{
+  color: #f4d142;
+}
+
+ul.orange span{
+  color: orange;
+}
+
+ul.red span{
+  color: red;
+}
+
+.test99{
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: $colorBlack;
+
+  &:after{
+  content: ".99";
+  font-size: 20px;
+  position: relative;
+  top: -16px; 
+  }
+
+  &:before{
+  font-size: 20px;
+  content: "$";
+  position: relative;
+  top: -16px;    
+  }
+}
+
+input[value="select plan"]{
+  @include headings(inherit, 12px, $colorWhite, bold, uppercase);
+  background-color: $colorS;
+  padding: 10px $smallPadd;
+  width: 100%;
+  border-style: none;
+  transition: 1s;
+  @include css3(border-radius, 5px);
+
+  &:hover{
+    @include css3(transform, scale(1.1));
+  }
+}
+
+.azul{
+  background: $colorFooter1;
+}
+
+footer{
+  background: $colorFooter2;
+}
+
+.hosting{
+  @include headings(inherit, 18px, inherit, normal, none);
+  padding: 100px 0px;
+  text-align: center;
+
+  a{
+    @include headings(inherit, 22px, $colorS, bold, none);
+    text-decoration: none;
+  }
+
+  p{
+    color: $colorWhite;
+  }
+}
+
+.pie{
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+  padding: 30px 0px;
+
+  p{
+    color: $colorWhite;
+  }
+
+  ul{
+    display: $inLine;
+
+    li{
+      display: $inLine;
+      margin-right: $smallPadd;
+    }
+
+    a{
+      color: $colorWhite;
+      text-decoration: none;
+    }
+
+    a:hover{
+      color: $colorS;
+    }
+  }
+}
+
+@import "media";
